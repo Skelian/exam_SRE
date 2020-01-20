@@ -1,0 +1,10 @@
+---
+- hosts: webserver
+  become: true
+  
+  tasks:
+    - name: install apache2
+      apt: name=apache2
+    - name: install php
+      apt: name=php
+
